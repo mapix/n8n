@@ -20,7 +20,7 @@ export class TheHiveApi implements ICredentialType {
 			default: '',
 			type: 'string' as NodePropertyTypes,
 			description: 'The URL of TheHive instance',
-			placeholder: 'https://localhost:9000',
+			placeholder: 'https://172.27.128.108:9000',
 		},
 		{
 			displayName: 'API Version',

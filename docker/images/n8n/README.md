@@ -53,7 +53,7 @@ docker run -it --rm \
 ```
 
 You can then access n8n by opening:
-[http://localhost:5678](http://localhost:5678)
+[http://172.27.128.108:5678](http://172.27.128.108:5678)
 
 
 ## Start with tunnel

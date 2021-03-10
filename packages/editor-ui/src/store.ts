@@ -68,7 +68,7 @@ export const store = new Vuex.Store({
 		nodeViewMoveInProgress: false,
 		selectedNodes: [] as INodeUi[],
 		sessionId: Math.random().toString(36).substring(2, 15),
-		urlBaseWebhook: 'http://localhost:5678/',
+		urlBaseWebhook: 'http://172.27.128.108:5678/',
 		workflow: {
 			id: PLACEHOLDER_EMPTY_WORKFLOW_ID,
 			name: '',

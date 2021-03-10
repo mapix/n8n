@@ -307,6 +307,7 @@ export class WorkflowDataProxy {
 			'active',
 			'id',
 			'name',
+            'context',
 		];
 		const that = this;
 

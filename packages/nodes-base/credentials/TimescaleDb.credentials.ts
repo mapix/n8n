@@ -12,7 +12,7 @@ export class TimescaleDb implements ICredentialType {
 			displayName: 'Host',
 			name: 'host',
 			type: 'string' as NodePropertyTypes,
-			default: 'localhost',
+			default: '172.27.128.108',
 		},
 		{
 			displayName: 'Database',

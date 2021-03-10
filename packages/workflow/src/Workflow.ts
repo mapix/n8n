@@ -77,6 +77,7 @@ export class Workflow {
 		// Save also the connections by the destionation nodes
 		this.connectionsByDestinationNode = this.__getConnectionsByDestination(parameters.connections);
 
+        this.context = {};
 		this.active = parameters.active || false;
 
 		this.staticData = ObservableObject.create(parameters.staticData || {}, undefined, { ignoreEmptyOnFirstChild: true });

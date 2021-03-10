@@ -610,6 +610,7 @@ export interface IWorkflowMetadata {
 	id?: number | string;
 	name?: string;
 	active: boolean;
+    context: IDataObject;
 }
 
 export type WebhookHttpMethod = 'GET' | 'POST' | 'HEAD' | 'OPTIONS';

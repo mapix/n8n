@@ -9,7 +9,7 @@ export class MicrosoftSql implements ICredentialType {
 			displayName: 'Server',
 			name: 'server',
 			type: 'string' as NodePropertyTypes,
-			default: 'localhost',
+			default: '172.27.128.108',
 		},
 		{
 			displayName: 'Database',

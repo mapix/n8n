@@ -36,7 +36,7 @@ export class MongoDb implements ICredentialType {
 				},
 			},
 			default: '',
-			placeholder: 'mongodb://<USERNAME>:<PASSWORD>@localhost:27017/?authSource=admin&readPreference=primary&appname=n8n&ssl=false',
+			placeholder: 'mongodb://<USERNAME>:<PASSWORD>@172.27.128.108:27017/?authSource=admin&readPreference=primary&appname=n8n&ssl=false',
 			required: false,
 			description: `If provided, the value here will be used as a MongoDB connection string,<br />
 						  and the MongoDB credentials will be ignored`,
@@ -52,7 +52,7 @@ export class MongoDb implements ICredentialType {
 					],
 				},
 			},
-			default: 'localhost',
+			default: '172.27.128.108',
 		},
 		{
 			displayName: 'Database',

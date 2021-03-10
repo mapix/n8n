@@ -516,6 +516,7 @@ export function getWorkflowMetadata(workflow: Workflow): IWorkflowMetadata {
 		id: workflow.id,
 		name: workflow.name,
 		active: workflow.active,
+        context: workflow.context,
 	};
 }
 

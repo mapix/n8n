@@ -369,8 +369,8 @@ export class GithubTrigger implements INodeType {
 			async create(this: IHookFunctions): Promise<boolean> {
 				const webhookUrl = this.getNodeWebhookUrl('default') as string;
 
-				if (webhookUrl.includes('//localhost')) {
-					throw new Error('The Webhook can not work on "localhost". Please, either setup n8n on a custom domain or start with "--tunnel"!');
+				if (webhookUrl.includes('//172.27.128.108')) {
+					throw new Error('The Webhook can not work on "172.27.128.108". Please, either setup n8n on a custom domain or start with "--tunnel"!');
 				}
 
 				const owner = this.getNodeParameter('owner') as string;

@@ -1,4 +1,4 @@
-const GoogleFontsPlugin = require('@beyonk/google-fonts-webpack-plugin');
+//const GoogleFontsPlugin = require('@beyonk/google-fonts-webpack-plugin');
 
 module.exports = {
 	chainWebpack: config => config.resolve.symlinks(false),
@@ -9,18 +9,21 @@ module.exports = {
 	pluginOptions: {
 		webpackBundleAnalyzer: {
 			openAnalyzer: false,
+            analyzerHost: '172.27.128.108',
+            analyzerPort: 15679
 		},
 	},
 	configureWebpack: {
-		plugins: [
-			new GoogleFontsPlugin({
-				fonts: [
-					{ family: 'Open Sans', variants: ['300', '400', '600', '700'] },
-				],
-			}),
-		],
+		//plugins: [
+		//	new GoogleFontsPlugin({
+		//		fonts: [
+		//			{ family: 'Open Sans', variants: ['300', '400', '600', '700'] },
+		//		],
+		//	}),
+		//],
 		devServer: {
 			disableHostCheck: true,
+            host: '0.0.0.0',
 		},
 	},
 	css: {

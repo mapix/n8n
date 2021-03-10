@@ -13,7 +13,7 @@ export class GhostAdminApi implements ICredentialType {
 			name: 'url',
 			type: 'string' as NodePropertyTypes,
 			default: '',
-			placeholder: 'http://localhost:3001',
+			placeholder: 'http://172.27.128.108:3001',
 		},
 		{
 			displayName: 'API Key',

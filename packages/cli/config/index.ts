@@ -28,7 +28,7 @@ const config = convict({
 			host: {
 				doc: 'PostgresDB Host',
 				format: String,
-				default: 'localhost',
+				default: '172.27.128.108',
 				env: 'DB_POSTGRESDB_HOST',
 			},
 			password: {
@@ -94,7 +94,7 @@ const config = convict({
 			host: {
 				doc: 'MySQL Host',
 				format: String,
-				default: 'localhost',
+				default: '172.27.128.108',
 				env: 'DB_MYSQLDB_HOST',
 			},
 			password: {
@@ -270,7 +270,7 @@ const config = convict({
 				host: {
 					doc: 'Redis Host',
 					format: String,
-					default: 'localhost',
+					default: '172.27.128.108',
 					env: 'QUEUE_BULL_REDIS_HOST',
 				},
 				password: {
@@ -323,7 +323,7 @@ const config = convict({
 	},
 	host: {
 		format: String,
-		default: 'localhost',
+		default: '172.27.128.108',
 		arg: 'host',
 		env: 'N8N_HOST',
 		doc: 'Host name n8n can be reached',
@@ -471,7 +471,7 @@ const config = convict({
 			doc: 'Disable production webhooks from main process. This helps ensures no http traffic load to main process when using webhook-specific processes.',
 		},
 		skipWebhoooksDeregistrationOnShutdown: {
-			/** 
+			/**
 			 * Longer explanation: n8n deregisters webhooks on shutdown / deactivation
 			 * and registers on startup / activation. If we skip
 			 * deactivation on shutdown, webhooks will remain active on 3rd party services.
